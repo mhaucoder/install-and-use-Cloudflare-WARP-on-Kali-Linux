@@ -23,7 +23,7 @@ curl https://pkg.cloudflareclient.com/pubkey.gpg | sudo gpg --dearmor -o /usr/sh
 
 Add the Cloudflare WARP repository to your sources list:
 ```sh
-echo "deb [signed-by=/usr/share/keyrings/cloudflare-warp-archive-keyring.gpg] https://pkg.cloudflareclient.com/ $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/cloudflare-client.list
+echo "deb [signed-by=/usr/share/keyrings/cloudflare-warp-archive-keyring.gpg] https://pkg.cloudflareclient.com/ bookworm main" | sudo tee /etc/apt/sources.list.d/cloudflare-client.list
 ```
 
 ### Step 4: Install the WARP Client
